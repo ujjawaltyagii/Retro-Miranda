@@ -272,7 +272,7 @@ html, body{
 #page3{
     position: relative;
     /* height: 60vh; */
-    padding-bottom: 100px;
+    padding-bottom: 15px;
     padding-top: 15px;
     background-color: #C4BCB3;
 }
@@ -295,4 +295,229 @@ html, body{
     position: absolute;
     top: 0;
     right: 2%;
+}
+
+#page4{
+    min-height: 100vh;
+    width: 100%;
+    background-color: #C4BCB3;
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    /* padding: 60px 34px; */
+    padding-top: 60px;
+    padding-right: 34px;
+    padding-left: 34px;
+    padding-bottom: 50px;
+}
+
+#p4left{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 65%;
+    padding-right: 40px;
+    border-right: 1px solid #222222c7;
+}
+
+#p4left #firstdiv{
+    display: flex;
+    width: 100%;
+    height: 45%;
+    align-items: start;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+
+#firstdivpart2{
+    width: 45%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-right: 25px;
+    padding-bottom: 30px;
+    border-right: 2px solid #969696;
+    text-align: left;
+}
+
+#firstdivpart3{
+    width: 50%;
+    height: 100%;
+}
+
+#imgdiv img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    transition: all ease 0.5s;
+}
+
+#imgdiv img:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+#firstdivpart3 #imgdiv{
+    height: 50%;
+    width: 100%;
+    overflow: hidden;
+}
+
+#firstdivpart3 h4{
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family: canopee;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+#firstdivpart3 p{
+    font-size: 19px;
+    font-family: domaine;
+    font-weight: 100;
+    letter-spacing: 0.1px;
+    color: #54514C;
+}
+
+#firstdivpart2 h2{
+    font-size: 55px;
+    font-weight: 100;
+    font-family: canopee;
+}
+
+#firstdivpart2 h3{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: domaine;
+    color: #2f2f2f;
+    margin: 10px 0;
+}
+
+#firstdivpart2 h6{
+    font-size: 20px;
+    font-weight: 100;
+    font-family: domaine;
+    color: #2f2f2f8d;
+    margin-top: 20px;
+}
+
+#p4left img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#p4right{
+    height: 100%;
+    width: 35%;
+    padding-left: 40px;
+}
+
+#p4right h1{
+    font-size: 94px;
+    font-family: canopee;
+    font-weight: 500;
+    line-height: 125px;
+}
+
+#p4right h1 span{
+    font-size: 206px;
+    letter-spacing: -5px;
+}
+
+#p4right p{
+    font-size: 35px;
+    font-weight: 100;
+    font-family: domaine;
+    color: #2f2f2f;
+    margin-top: 10px;
+    line-height: 40px;
+}
+
+#p4right #btndiv{
+    height: 150px;
+    width: 100%;
+    background-color: #CAC1B6;
+    display: flex;
+    border: 1px solid #2f2f2fa8;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+    overflow: hidden;
+    flex-wrap: nowrap;
+}
+
+#btndiv:hover{
+    cursor: pointer;
+}
+
+#p4right #btndiv img{
+    height: 60px;
+    transform: translateX(-120%);
+    transition: all ease 0.6s;
+}
+
+#p4right #btndiv:hover img{
+    transform: translateX(70%);
+}
+
+#p4right #btndiv h1{
+    width: 100%;
+    height: 100%;
+    font-size: 70px;
+    font-family: canopee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transform: translateX(-35%);
+    transition: all ease 0.5s; 
+}
+
+#p4right #btndiv:hover h1{
+    transform: translateX(100%);
+}
+
+#page5{
+    padding: 15px 0;
+    width: 100%;
+    background-color: #C4BCB3;
+    white-space: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    border-top: 1px solid #222;
+    border-bottom: 1px solid #222;
+}
+
+#page5 h1{
+    font-size: 80px;
+    font-family: domaine;
+    font-weight: 100;
+    display: inline-block;
+    margin-right: 12px;
+    animation: slide 5s infinite linear;
+}
+
+#page5 h1 span{
+    background-color: #1c1C19;
+    font-family: canopee;
+    color: #C4BCB3;
+    padding: 0 5px;
+}
+
+
+@keyframes slide{
+    0%{
+        transform: translateX(0%);
+    }
+    100%{
+        transform: translateX(calc(-100% - 12px));
+    }
+}
+
+#page5:hover h1{
+    cursor: pointer;
+    animation-play-state: paused;
 }
