@@ -703,3 +703,21 @@ html, body{
     border-radius: 50%;
     display: inline-block;
 }
+
+/* Responsiveness? Too lazy to do now :) */
+@media screen and (max-width: 1350px){
+    body::before{
+        content: "Mobile view is NOT Available Yet! Please open in Laptop or Desktop to view this magnificent Retro-style website!";
+        display: block;
+        font-size: 5.5vw;
+        width: 40%;
+        text-align: center;
+        position: absolute;
+        top: 30%;
+        left: 50%;
+        transform: translate(-50%);
+    }
+    #main{
+        display: none;
+    }
+}
