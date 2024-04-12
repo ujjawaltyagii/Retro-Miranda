@@ -28,7 +28,6 @@ html, body{
 #main{
     background-color: #222;
     overflow-x: hidden;
-    height: 100%;
 }
 
 #page1{
@@ -190,14 +189,15 @@ html, body{
 }
 
 #page1 h1{
-    font-size: 495px;
+    font-size: 33.2vw;
     font-weight: 100;
     font-family: canopee;
     background-color: #1c1C19;
     color: #C4BCB3;
-    line-height: 425px;
-    width: 96%;
+    line-height: 414px;
+    width: fit-content;
     margin-left: 2%;
+    padding: 0 17px;
 }
 
 #page2{
@@ -295,11 +295,11 @@ html, body{
     height: 390px;
     position: absolute;
     top: 0;
-    right: 2%;
+    right: 3%;
 }
 
 #page4{
-    min-height: 100vh;
+    height: 150vh;
     width: 100%;
     background-color: #C4BCB3;
     display: flex;
@@ -531,7 +531,7 @@ html, body{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 20px 34px;
+    padding: 40px 34px;
 }
 
 #p6upper{
@@ -576,9 +576,10 @@ html, body{
 }
 
 #p6upper-left>h1{
-    font-size: 25.7vw;
+    font-size: 24.5vw;
     font-family: canopee;
     font-weight: 100;
+    letter-spacing: 6px;
 }
 
 #p6upper>img{
@@ -622,6 +623,7 @@ html, body{
     display: flex;
     align-items: start;
     justify-content: start;
+    margin-top: 2vh;
 }
 
 #p6down-down>span{
